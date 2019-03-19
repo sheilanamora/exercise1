@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello There!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    * {
+    box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    height: 500px;
+  }
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1{
+    font-family: 'Raleway', sans-serif;
+}
+
+/*header style*/
+.header {
+    grid-area: header;
+    background-color: #3794DA;
+    padding: 36px 271px;
+}
+.header h2{
+    font-family: 'Poppins', sans-serif;
+}
+.header div {
+    height: 278px;
+    background-color: #FDFDFD;
+    position: relative;
+    padding: 26px;
+}
+.header div #childDiv{
+    height: 226px;
+    background-color: #FDFDFD;
+    border: 3px solid #4E8AC7;
+    color: #4E8AC7;
+    text-align: center;
+}
+.divLabel {
+    background-color: #4e8ac7;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    width: 100%;
+    height: 100px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: #FDFDFD;
+    padding-top: 20px;
+}
+
+.div2 {
+    background-color: #C5EAFF; 
+    padding: 25px 35px 35px 35px; 
+    font-size: 16px; 
+    color: #0070C4;
+    text-align: left;
+}
+
+    </style>
+</head>
+<body>
+        <div class="header">
+            <div>
+                <div id="childDiv">
+
+                    <h1>Sheila Giovanna Namora</h1>
+
+                    <canvas id="myCanvas" width="200" height="5">
+                        Your browser does not support the HTML5 canvas tag.</canvas>
+                        
+                        <script>
+                        var c = document.getElementById("myCanvas");
+                        var ctx = c.getContext("2d");
+                        ctx.strokeStyle = "#4E8AC7";
+                        ctx.lineWidth = 5;
+                        ctx.moveTo(0,0);
+                        ctx.lineTo(200,0);
+                        ctx.stroke();
+                        </script>
+
+                    <h2>College Student</h2>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-4 div2">
+                <h2 style="text-align: center;">Profile</h2>
+                <p style="text-align: left">Hi! I'm a college student majoring Informatics Engineering at State Polytechnique of Jakarta.
+                    I've always enjoyed reading and designing. Reading to keep me inspired and designing to represent my inspired mind.
+                    I can spend my whole day on coding too, but under several circumtances ;)
+                    I am a creative and conceptual person, i usually being the "idea-maker" in a project and can be a problem solver too because i pay attention to details.
+                    Randomly i like to think how everything was designed to be existed. 
+                    I want to be a UI/UX Designer with the (continuously advancing) skill of Front-end Developing too, because they're really challenging yet enjoyable. 
+                </p>
+            </div>
+
+            <div class="col-4" style="background-color: #FDFDFD; padding: 35px;">
+                <img src="https://i.pinimg.com/280x280_RS/80/ec/c9/80ecc94660d2671148bd5c98b28b87ea.jpg" alt"Profile Photo"
+                width="300px" height="300px"
+                style="border-radius: 50%; display: block; margin: auto;">
+                <div class="divLabel">
+                    <h2>I love chilling at the beach hehe</h2>
+                </div>
+            </div>
+
+            <div class="col-4 div2">
+                <h2 style="text-align: center;">Contact</h2>
+                <p>You can reach me through my :
+                <ul style="text-align: left;">
+                    <li>Email     : sheilanamora@gmail.com</li>
+                    <li>LinkedIn  : Sheila Simanjuntak</li>
+                    <li>Instagram : @sheilanamora</li>
+                </ul>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+                <div class="col-4" style="background-color: #FDFDFD;">
+                    
+                    </div>
+                    
+                    <div class="col-4 div2">
+                            <h2 style="text-align: center;">Skills</h2>
+                            <p style="text-align: left;">Recently, i'm good (and continuously learning) at :
+                                <ul>
+                                    <li>User Interface Design</li>
+                                    <li>User Experience Design</li>
+                                    <li>Illustation with Adobe Illustrator</li>
+                                    <li>Front-end Delepment</li>
+                                    <li><i>If you get to know me further, you'll know how good the taste of foods crafted by my hand.</i></li>
+                                </ul>
+                            </p>
+
+                        </div>
+        
+                        <div class="col-4" style="background-color: #FDFDFD;">
+                               
+                            </div>
+        </div>
+</body>
+</html>
